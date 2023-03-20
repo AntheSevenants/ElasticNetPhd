@@ -24,11 +24,12 @@ jobs:
       - uses: actions/checkout@master
         with:
           repository: AntheSevenants/summarine-render-node
+          path: 'renderer'
       - name: Install dependencies
         run: npm ci
       - name: Render notes in the repository
         run: |
-          node summarine-render-bulk.js "."
+          node renderer/summarine-render-bulk.js .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
