@@ -31,7 +31,7 @@ jobs:
       - name: Render notes in the repository
         run: |
           node summarine-render-bulk.js ..
-        working-directory: 'renderer'
+        working-directory: '.renderer'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
