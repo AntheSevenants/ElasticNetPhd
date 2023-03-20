@@ -1,0 +1,39 @@
+name: Render notes and upload to Pages
+
+on: [push, pull_request, workflow_dispatch]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '12.22.9' 
+      - uses: actions/checkout@master
+        with:
+          repository: AntheSevenants/summarine-render-node
+      - name: Install dependencies
+        run: npm ci
+      - name: Render notes in the repository
+        run: |
+          node summarine-render-bulk.js "."
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload docs
+          path: './output'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
