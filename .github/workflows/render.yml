@@ -30,12 +30,13 @@ jobs:
         working-directory: 'renderer'
       - name: Render notes in the repository
         run: |
-          node renderer/summarine-render-bulk.js .
+          node summarine-render-bulk.js ..
+        working-directory: 'renderer'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload docs
-          path: './output'
+          path: './renderer/output'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
