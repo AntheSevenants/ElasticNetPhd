@@ -1030,12 +1030,57 @@ $/example$
 ### Formal definition
 
 $eq$
+**Objective function**
+
 $$
 \begin{aligned}
-\min_{(\beta_0, \beta) \in \mathbb{R}^{p+1}} &- \left[\frac{1}{N} \sum_{i=1}^N y_i \cdot (\beta_0 + x_i^T \beta) - \log (1+e^{(\beta_0+x_i^T \beta)})\right] + \\
-& \lambda \big[ (1-\alpha)\|\beta\|_2^2/2 ++ \alpha\|\beta\|_1\big]
+\min_{(\beta_0, \beta) \in \mathbb{R}^{p+1}} & \underbrace{ - \left[ \frac{1}{N} \cdot \sum_{i=1}^N y_i \cdot (\beta_0 + x_i^T \cdot \beta) - \log (1+e^{(\beta_0+x_i^T \cdot \beta)})\right] }_{\text{negative log-likelihood of logistic regression}} + \\
+& \underbrace{\lambda \big[ (1-\alpha)\|\beta\|_2^2/2 + \alpha\|\beta\|_1\big]}_{\text{regularization penalty}}
 \end{aligned}
 $$
+
+$columns$
+$wide$
+**Negative log-likelihood**
+
+- 𝑁: number of observations
+- $\frac{1}{N}$: standardise loss (generalises across datasets),
+- $\sum_{i=1}^N$: for each observation
+- 𝑦~𝑖~: binary response variable for the 𝑖^th^ observation
+- 𝑥~𝑖~: vector of predictor variables for the 𝑖^th^ observation
+- $\beta_0$: intercept
+- $\beta$: vector of regression coefficients
+$/widec$
+$wide$
+**Regularization penalty**
+
+- $l: controls the strength of the penalty
+- ɑ: determines the balance between L1 and L2 regularisation
+- L1: encourages sparsity in the model  
+	- adds the sum of the absolute values of the coefficients as a penalty term
+	- = $\|x\|_1$ with $x \in \mathbb{R}^n$ = $\|x_1\| + ... + \|x_n\|$
+- L2: adds the sum of the squared coefficients
+	- = $\|x\|_2$ with $x \in \mathbb{R}^n$ = $\sqrt{x_1^2 + ... + x_n^2}$
+	- this is the same as the Euclidean length!
+	- division by 2 = balances the regularization penalty
+$/wide$
+$/columns$
+
+$info$
+A ==vector norm== is *any* function we can use to ==measure the magnitude (or length) of a vector==. This concept extends the notion of an absolute value to vectors. [(Advanced Linear Algebra, UTexas)](https://www.cs.utexas.edu/users/flame/laff/alaff/chapter01-what-is-a-vector-norm.html)
+$/info$
+
+$info$
+The logistic regression model estimates the probability of observing $y_i=1$ as a function of the predictors $x_i$, and this probability is modelled using the logistic function ($see $down):
+
+$$
+p(y_i=1|x_i) = \frac{1}{1+e^{-(\beta_0+x_i^T \beta)}}
+$$
+$/info$
+
+$info$
+The objective function is minimized with respect to the coefficients $\beta_0$ and $\beta$ to obtain the optimal values that minimize the negative log-likelihood of the logistic regression model subject to the regularization penalty.
+$/info$
 $/eq$
 
 problems with logistic regression
