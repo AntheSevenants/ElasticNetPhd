@@ -1044,7 +1044,7 @@ $wide$
 **Negative log-likelihood**
 
 - 𝑁: number of observations
-- $\frac{1}{N}$: standardise loss (generalises across datasets),
+- $\frac{1}{N}$: normalise loss (generalises across datasets),
 - $\sum_{i=1}^N$: for each observation
 - 𝑦~𝑖~: binary response variable for the 𝑖^th^ observation
 - 𝑥~𝑖~: vector of predictor variables for the 𝑖^th^ observation
@@ -1211,6 +1211,22 @@ cvfit <- cv.glmnet(x, y, family = "binomial", type.measure = "class")
 
 - misclassification error used as the criterion for 10-fold cross-validation
 $/code$
+
+$info$
+==Misclassification error== reports the **fraction of misclassified predictions**.
+
+The logic is: if the predicted probability is higher than 0.5, we assume class membership of the predicted class.
+
+```r
+## Measure: Misclassification Error 
+## 
+##     Lambda Index Measure      SE Nonzero
+## min 0.1065    84    0.12 0.04341      30
+## 1se 0.6240    65    0.16 0.03697      30
+```
+
+- $result so here, 16% of cases were misclassified for the 1se-model
+$/info$
 
 #### Plotting
 
