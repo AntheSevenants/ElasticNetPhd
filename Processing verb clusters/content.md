@@ -163,16 +163,15 @@ $p=107$
 
 ### Introduction
 
-lexical effects
-- associated between **verbs** and **verb clusters**
-- semantic explanations for choice between both
-
 $p=110$
+
+lexical effects
+- associations between **main verbs** and **verb cluster orders**
+- ==semantic explanations== for choice between both orders
 
 frequency
 - entrenches linguistic elements in memory
 - i.e. speakers grow accustomed to a verb having a specific order in a verb cluster, then repeat that order
-- => ($todo check correlation coefficient and frequency!)
 
 $p=111$
 
@@ -207,6 +206,10 @@ lexical association / lexical idiomaticity
 - "when an associated cannot be accounted for with other factors, it must be lexical"
 
 $p=114$
+
+meaning difference R and G
+- has not been found
+- consensus: no semantic differences
 
 explanations for lexical preferences
 - will not be given
@@ -315,6 +318,8 @@ $p=125-126$
 
 ### Results
 
+#### Initial distinctive collexeme analysis
+
 results
 - two verbs occur exclusively in either order
 	- *toebehoren* + *malen*
@@ -325,32 +330,64 @@ $p=127$
 
 correlation with frequency?
 - likely!
-- threshold = OR 1.5 (or 0.66) -- $todo dit herbekijken
+- when rerunning analysis with verbs that occur at least 1000 times (110 most frequent verbs), 82% is significantly associated with a verb
+
+effect size threshold
+- Odds Ratio of 1.5 (or 0.66)
+- "we consider a word to be associated with an order if its estimated chance of being used in that order is > 1.5 times more likely than being used in the opposite order
+- for the full set of verbs, 63.1% of verbs have an effect size greater than the threshold!
+	- $see $down
 
 $reader wide$
 "these word order associations are a NOT marginal phenomenon that occurs with uncommon verbs"
 
-- $result BUT! they are ==more common== across lower-frequency verbs
+- $result BUT! they _are_ ==more common== across lower-frequency verbs
 $/reader wide$
+
+#### Adjectivity factor
 
 $p=128$
 
 ways of operationalising adjectiveness
-- $see down
+- $see $down
 	1. zijn-ratio
 		- percentage of clusters with *zijn*
 	2. ratio of adjective use
 		- problem: tagging is unreliable!
 		- if I read it correctly, Bloem only uses undeclensed forms
 
+adjectivity factor
+- ==should be controlled for== if we want to observe lexical preferences!
+
+#### Participle verb factor
+
+particle verbs
+- very strong tendency to occur in the 1-2 order
+- e.g. (***af**wassen*, *wash **up***)
+- => ==control for?==
+
 $p=129$
 
-disturbing factors
-- here: separability
-- gleaned from plotting distribution of proportions
-- $todo zelf kijken hiernaar
+distribution of word order frequencies of the verbs
+- not normally distributed! ($see $down)
+
+$gallery$
+**Relative word order distribution**
+
+![Image](img$zit2)
+
+- two peaks in the distribution
+	1. around 60-65% red order
+	2. around 8085% red order
+
+$info$
+When the separable verbs are taken out of the dataset, the number of associations with an order drops. This means that the peak could definitely be (partially) attributed to the separability. It also caused the second peak to drop.
+$/info$
+$/gallery$
 
 $p=130$
+
+#### Auxiliary verb factor
 
 auxiliary verbs have distinct word order associations
 - Bloem et al. (2014): *hebben* = more R
@@ -359,6 +396,8 @@ auxiliary verbs have distinct word order associations
 	- also evades adjectiveness issues
 
 $p=132$
+
+#### Semantic analysis
 
 semantic analysis
 - done using ==Cornetto==!
@@ -389,9 +428,7 @@ $p=138$
 ### Conclusions and future work
 
 $reader wide$
-"no other major categories of verbs in the data with different order preferences"
-
-- $result means: probably no other influences -- $todo herbekijken
+"the fact that the distribution of the proportions had a single peak after removing the particle verb factor, also indicates that there are ==**no other major categories of verbs in the data with different order preferences**=="
 $/reader wide$
 
 stronger associations with G order (~= De Sutter 2005)
@@ -458,7 +495,7 @@ $/info$
 $warn$
 **'Language = stable?'**
 
-*Not* for lexical content! (Meyerhoff 2006) -> you should focus on $todo
+*Not* for lexical content! (Meyerhoff 2006)
 $/warn$
 
 $p=201$
