@@ -505,7 +505,7 @@ tensor smooths
 $eq$
 $bigtex$
 $$
-y = te(x_1, x2)
+y = te(x_1, x_2)
 $$
 $/bigtex$
 
