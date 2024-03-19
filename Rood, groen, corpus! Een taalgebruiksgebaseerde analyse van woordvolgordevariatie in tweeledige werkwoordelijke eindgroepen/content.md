@@ -513,9 +513,18 @@ waarom?
 	- minder tijd over om aan stilistische encodering te doen
 - => terugvallen op de makkelijker te produceren groene volgorde
 
-$p=305$
+$p=302$
 
 ## Samenvatting
+
+----
+$widec$
+/!\ Dit gaat om de belangrijkste **interne** factoren!  
+De datasets voor intern/extern $zn anders, dus onderlinge vergelijkingen kunnen niet $w gemaakt.
+$/widec$
+----
+
+$p=305$
 
 interactie
 - welke verklarende factor is het belangrijkst?
