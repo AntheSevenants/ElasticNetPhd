@@ -371,6 +371,14 @@ lengte van het middenstuk
 waarom?
 - **accentbotsing** vermijden!
 
+$reader$
+De redenering achter [HYP 4.7] is dat de keuze voor de rode volgorde [AUX+PART],
+met het hulpwerkwoord tussen het preverbale accent en het deelwoordaccent, een
+accentenbotsing kan vermijden (daarbij wordt aangenomen dat de lengte van het
+middenstuk positief correleert met de kans dat een sterk beklemtoond element voor de
+werkwoordelijke eindgroep komt te staan).
+$/reader$
+
 $gallery port$
 $widec$
 ![Image](img$01w0)
@@ -406,6 +414,32 @@ nadruk hier: Aktionsart
 - adj = staat (=> G)
 - ww = werking (=> R)
 
+$p=205$
+
+bepalen van 'statisch' of 'dynamisch'
+- een moeilijke opgave
+- (er wordt een overzicht gegeven van semantische, morfologische en syntactische criteria die statisch dan wel dynamisch kunnen bepalen)
+
+$p=206$
+
+onfeilbaar?
+- niet echt -> problemen met classificatie!
+
+1.  de semantische criteria zijn gebaseerd op **erg vage semantische noties**
+	- (wat is een toestand, wat is een werking?)
+	- een operationalisering ligt niet voor de hand
+	- de intuïtie van de analist wordt in hoge mate aangesproken
+	- => de objectiviteit en generaliseerbaarheid van de analyse komt in het gedrang
+2. heel wat
+van de morfologische en syntactische criteria meten slechts het adjectief*potentieel* en
+niet de adjectief*realiteit*
+
+$p=207$
+
+$widec$
+(verder wordt een algoritme uit de doeken gedaan dat moet kunnen bepalen of een werkwoord statisch dan wel dynamisch is)
+$/widec$
+
 $p=217$
 
 ### Adjectiviteit
@@ -440,6 +474,17 @@ $/reader$
 
 ### Specificiteit
 
+$p=245$
+
+[ Verhoudingen tussen rood en groen in disctinctieve collexeemanalyse ]
+|groen|rood|
+|53|22|
+|5,81%|2,41%|
+
+$info$
+De procentuele waarden zijn in relatie tot *alle* deelwoorden. Er zijn dus maar weinig deelwoorden die volgens deze methodologie significant vaak voorkomen in een bepaalde volgorde. Dat is volgens mij te wijten aan de dataset (die niet zo heel groot is denk ik).
+$/info$
+
 $p=247$
 
 specificiteit van de groene volgorde
@@ -467,6 +512,19 @@ aangaan en het aantal deelwoorden dat specifiek is voor de rode volgorde
 [AUX+PART] beperkter is** (precies omdat er altijd een tegengewicht is van de groene
 volgorde [PART+AUX])
 $/reader wide$
+
+### Hypothese-Pardoen
+
+$reader$
+Hoe het ook
+moge zijn, tegen de achtergrond van Pardoens hypothese is de aanwezigheid van
+geweest en gehad in de lijst met distinctieve collexemen voor de rode volgorde
+[AUX+PART] opvallend, aangezien daarvan op geen enkele manier gezegd kan
+worden dat ze een actionele betekenis hebben. Dat betekent met andere woorden dat
+de actionele, dynamische betekenis die in het model-Pardoen aan de rode volgorde
+[AUX+PART] toegekend wordt in sommige omstandigheden in een semantisch
+conflict kan geraken met de semantiek van het deelwoord.
+$/reader$
 
 $p=256-257$
 
